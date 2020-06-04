@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    padding: 2% 40%;
+}
+
+.card {
+    background-color: #262529 !important;
+    color: whitesmoke !important;
+    margin: 2% 3% !important;
+}
+
+
+
+.confirmed {
+    border-bottom: 10px solid blue;
+}
+
+.active {
+    border-bottom: 10px solid yellow;
+}
+
+.death {
+    border-bottom: 10px solid red;
+}
+
+.recovered {
+    border-bottom: 10px solid green;
+}
