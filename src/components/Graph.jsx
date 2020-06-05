@@ -28,7 +28,7 @@ const Graph = ({data , district})=> {
        }
       
     let colo = zone.filter((z)=> z.district === district)
-      console.log(colo)
+     
      
 
       

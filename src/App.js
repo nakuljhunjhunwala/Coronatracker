@@ -22,7 +22,7 @@ const App = () => {
     const getData = async () => {
       const mdata = await fetchData();
       setrawData(mdata);
-      console.log(mdata[state].districtData)
+     
       setData(mdata[state].districtData);
       
     }
@@ -33,7 +33,7 @@ const App = () => {
 
 
   const getState = (state) => {
-    console.log(state)
+   
     setstate(state);
     setdistrict("");
   }
