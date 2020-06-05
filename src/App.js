@@ -11,30 +11,44 @@ import {
 } from './components/Api';
 
 const App = () => {
-
+  const [rawdata, setrawData] = useState({});
   const [data, setData] = useState({});
+  const [state, setstate] = useState("State Unassigned");
+  const [district, setdistrict] = useState('');
 
-  const [district, setdistrict] = useState('Thane');
 
   useEffect(() => {
 
     const getData = async () => {
       const mdata = await fetchData();
-      setData(mdata);
+      setrawData(mdata);
+      console.log(mdata[state].districtData)
+      setData(mdata[state].districtData);
+      
     }
 
     getData();
 
-  }, []);
+  }, [setData,setrawData,state]);
 
+
+  const getState = (state) => {
+    console.log(state)
+    setstate(state);
+    setdistrict("");
+  }
+  
   const getDistrict = (district) => {
+    
     setdistrict(district);
   }
+
+  
 
 
   return (
   <div className="App" >
-    <h1 >Maharastra Corona Tracker </h1>
+    <h1 >Corona Tracker </h1>
      <Cards data = {
       data
     }
@@ -44,8 +58,17 @@ const App = () => {
      <DistrictPicker data = {
       data
     }
+    rawdata = {
+      rawdata
+    }
+    district = {
+      district
+    }
     getDistrict = {
       getDistrict
+    }
+    getState = {
+      getState
     } /> 
      
     <Graph data = {

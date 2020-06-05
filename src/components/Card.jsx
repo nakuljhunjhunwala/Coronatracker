@@ -14,7 +14,7 @@ const Cards = ({
 }) => {
 
     if (!data[district]) {
-        return ("Loading...")
+        return ("")
     }
 
     return ( 

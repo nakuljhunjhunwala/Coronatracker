@@ -1,14 +1,24 @@
 import axios from 'axios';
 
-const url = "https://api.covid19india.org/state_district_wise.json";
-
 export const fetchData = async ()=> {
     try {
+        const url = "https://api.covid19india.org/state_district_wise.json";
         const {data} = await axios.get(url);
 
-        const maharastraData = data.Maharashtra.districtData;
+        return data;
+    } catch (error) {
+        alert(error);
+    }
+}
 
-        return maharastraData;
+
+export const fetchZone = async ()=> {
+    try {
+
+        const url = "https://api.covid19india.org/zones.json";
+        const {data} = await axios.get(url);
+
+        return data;
     } catch (error) {
         alert(error);
     }
