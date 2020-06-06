@@ -36,7 +36,7 @@ const proxyUrl = "https://cors-anywhere.herokuapp.com/"
 const url = `${proxyUrl}https://newsapi.org/v2/everything?q=covid%2019&from=${date}&pageSize=6&language=en&domains=ndtv.com,indiatoday.in,indianexpress.com&sortBy=popularity&apiKey=8067ce9c47be446085bc0e70056d7665`;
 
 
-        // const url = `https://newsapi.org/v2/everything?q=covid%2019&from=${date}&pageSize=6&language=en&domains=ndtv.com,indiatoday.in,indianexpress.com&sortBy=popularity&apiKey=8067ce9c47be446085bc0e70056d7665`;
+        // const url = `http://newsapi.org/v2/everything?q=covid%2019&from=${date}&pageSize=6&language=en&domains=ndtv.com,indiatoday.in,indianexpress.com&sortBy=popularity&apiKey=8067ce9c47be446085bc0e70056d7665`;
         const {data} = await axios.get(url);
 
         return data;
