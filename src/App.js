@@ -5,6 +5,7 @@ import React, {
 import './App.css';
 import Cards from './components/Card';
 import Graph from './components/Graph';
+import News from './components/News';
 import DistrictPicker from './components/DistritPicker';
 import {
   fetchData
@@ -77,6 +78,14 @@ const App = () => {
     district = {
       district
     } /> 
+    <News
+     data = {
+      data
+    }
+    district = {
+      district
+    }
+    />
   </div>
   );
 }

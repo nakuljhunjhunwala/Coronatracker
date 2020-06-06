@@ -55,7 +55,7 @@ const Graph = ({data , district})=> {
         />
     );
     return(
-        <div style={{marginBottom:"100px"}}>
+        <div style={{marginBottom:"50px"}}>
             <center><h2 style={{color : colo[0].zone}}>
               {colo[0].zone} Zone</h2></center>
             {Piechart}
