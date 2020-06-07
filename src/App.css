@@ -5,12 +5,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #1C1B1F;
+  background-color: #019FDC;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: aliceblue;
   overflow: hidden;
+
+
+background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
 }
 
 h1{

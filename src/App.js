@@ -3,6 +3,7 @@ import React, {
   useEffect
 } from 'react';
 import './App.css';
+import DailyVisitor from './components/DailyVisitor';
 import Cards from './components/Card';
 import Graph from './components/Graph';
 // import News from './components/News';
@@ -50,6 +51,7 @@ const App = () => {
   return (
   <div className="App" >
     <h1 >Corona Tracker </h1>
+    <DailyVisitor></DailyVisitor>
      <Cards data = {
       data
     }
