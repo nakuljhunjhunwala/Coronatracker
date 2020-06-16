@@ -55,3 +55,17 @@ export const fetchCount = async ()=> {
         alert(error);
     }
 }
+
+
+
+export const fetchBhiwandi = async ()=> {
+    try {
+
+        const url = "https://radiant-forest-92406.herokuapp.com/scrape";
+        const {data} = await axios.get(url);
+        console.log(data);
+        return data;
+    } catch (error) {
+        alert(error);
+    }
+}

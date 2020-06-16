@@ -5,14 +5,53 @@ import React, {
 import './App.css';
 import DailyVisitor from './components/DailyVisitor';
 import Cards from './components/Card';
+import Bcard from './components/Bcard';
 import Graph from './components/Graph';
 // import News from './components/News';
 import DistrictPicker from './components/DistritPicker';
 import {
   fetchData
 } from './components/Api';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-const App = () => {
+
+
+
+
+const App= ()=>{
+  return(
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/bhiwandi" exact component={Bhiwandi} />
+      </Switch>
+    </Router>
+  );
+}
+
+
+
+
+
+const Bhiwandi = ()=>{
+  return(
+
+   
+      <div className="App" >
+        <h1 >Bhiwandi Corona Tracker </h1>
+    <DailyVisitor></DailyVisitor>
+        <Bcard></Bcard>
+        </div>
+  
+  );
+}
+
+
+
+
+
+
+const Home = () => {
   const [rawdata, setrawData] = useState({});
   const [data, setData] = useState({});
   const [state, setstate] = useState("State Unassigned");
@@ -45,7 +84,6 @@ const App = () => {
     setdistrict(district);
   }
 
-  
 
 
   return (
