@@ -41,6 +41,10 @@ const Bhiwandi = ()=>{
         <h1 >Bhiwandi Corona Tracker </h1>
     <DailyVisitor></DailyVisitor>
         <Bcard></Bcard>
+        <a href="/">Main Page</a>
+
+        <center><h3>Managed and created by <br></br>Nakul Jhunjhunwala</h3></center>
+
         </div>
   
   );
@@ -111,6 +115,8 @@ const Home = () => {
     getState = {
       getState
     } /> 
+
+    <a href="/bhiwandi">Check Bhiwandi Data</a>
      
     <Graph data = {
       data
@@ -133,7 +139,7 @@ const Home = () => {
     }
     /> */}
 
-
+<center><h3>Managed and created by <br></br>Nakul Jhunjhunwala</h3></center>
 
 
   </div>
