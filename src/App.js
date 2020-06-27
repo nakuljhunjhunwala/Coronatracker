@@ -40,7 +40,8 @@ const Bhiwandi = ()=>{
       <div className="App" >
         <h1 >Bhiwandi Corona Tracker </h1>
     <DailyVisitor></DailyVisitor>
-        <Bcard></Bcard>
+        {/* <Bcard></Bcard> */}
+        <h2>Site Under Maintainence </h2>
         <a href="/">Main Page</a>
 
         <center><h3>Managed and created by <br></br>Nakul Jhunjhunwala</h3></center>
