@@ -5,7 +5,7 @@ import React, {
 import './App.css';
 import DailyVisitor from './components/DailyVisitor';
 import Cards from './components/Card';
-// import Bcard from './components/Bcard';
+import Bcard from './components/Bcard';
 import Graph from './components/Graph';
 // import News from './components/News';
 import DistrictPicker from './components/DistritPicker';
@@ -40,8 +40,8 @@ const Bhiwandi = ()=>{
       <div className="App" >
         <h1 >Bhiwandi Corona Tracker </h1>
     <DailyVisitor></DailyVisitor>
-        {/* <Bcard></Bcard> */}
-        <h2>Site Under Maintainence </h2>
+        <Bcard></Bcard>
+       
         <a href="/">Main Page</a>
 
         <center><h3>Managed and created by <br></br>Nakul Jhunjhunwala</h3></center>
